@@ -318,7 +318,7 @@ body {
   padding-bottom: 1rem;
 }
 
-/* .title.is-3::after {
+.title.is-3::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -328,7 +328,7 @@ body {
   height: 3px;
   background: var(--gradient-accent);
   border-radius: 2px;
-} */
+}
 
 /* Content Improvements */
 .content.has-text-justified {
