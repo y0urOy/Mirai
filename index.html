@@ -17,9 +17,7 @@
   <meta property="og:site_name" content="Mirai Project Page">
   <meta property="og:title" content="Mirai: Autoregressive Visual Generation Needs Foresight">
   <meta property="og:description" content="Mirai is a foresight alignment framework for autoregressive image generation that injects future signals into training, improving global coherence and convergence.">
-  <!-- GitHub Pages 最终 URL -->
   <meta property="og:url" content="https://y0urOy.github.io/Mirai/">
-  <!-- 预览图（放一张 teaser，1200x630 最好）-->
   <meta property="og:image" content="https://y0urOy.github.io/Mirai/static/images/social_preview.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -30,7 +28,7 @@
   <meta property="article:tag" content="autoregressive image generation">
   <meta property="article:tag" content="foresight alignment">
 
-  <!-- ========= Twitter（如暂时不用，可以整体保留也可以注释）========= -->
+  <!-- ========= Twitter（暂时不用）========= -->
   <!--
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
@@ -50,7 +48,7 @@
   <meta name="citation_author" content="Yamasaki, Toshihiko">
   <meta name="citation_publication_date" content="2026">
   <meta name="citation_conference_title" content="CVPR 2026 (under review)">
-  <!-- 你放论文 PDF 的路径 -->
+  <!-- 如果暂时没有公开 PDF，这里保留占位也没问题 -->
   <meta name="citation_pdf_url" content="https://y0urOy.github.io/Mirai/static/pdfs/mirai_cvpr2026.pdf">
   
   <!-- ========= Additional SEO ========= -->
@@ -77,7 +75,7 @@
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
   
-  <!-- Non-critical CSS（保持即可） -->
+  <!-- Non-critical CSS -->
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -191,12 +189,12 @@
 </head>
 <body>
 
-  <!-- Scroll to Top Button（保留） -->
+  <!-- Scroll to Top Button -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works 下拉：目前用不到，整体注释 -->
+  <!-- More Works 下拉：暂时不用 -->
   <!--
   <div class="more-works-container">
     ...
@@ -214,53 +212,34 @@
             <h1 class="title is-1 publication-title">
               Mirai: Autoregressive Visual Generation Needs Foresight
             </h1>
-
-            <!-- 作者信息（可以继续细改） -->
+  
+            <!-- 作者 + 机构编号 + * 对应作者 -->
             <div class="is-size-5 publication-authors">
-              <span class="author-block">Yonghao Yu</span>,
-              <span class="author-block">Lang Huang</span>,
-              <span class="author-block">Zerun Wang</span>,
-              <span class="author-block">Runyi Li</span>,
-              <span class="author-block">Toshihiko Yamasaki</span>
+              <span class="author-block">Yonghao Yu<sup>1</sup></span>,
+              <span class="author-block">Lang Huang<sup>2*</sup></span>,
+              <span class="author-block">Zerun Wang<sup>1</sup></span>,
+              <span class="author-block">Runyi Li<sup>3</sup></span>,
+              <span class="author-block">Toshihiko Yamasaki<sup>1</sup></span>
             </div>
-
+  
             <div class="is-size-5 publication-authors" style="margin-top: 0.4rem;">
               <span class="author-block">
-                The University of Tokyo &nbsp;&nbsp;·&nbsp;&nbsp;
-                National Institute of Informatics &nbsp;&nbsp;·&nbsp;&nbsp;
-                Peking University
+                <sup>1</sup> The University of Tokyo &nbsp;&nbsp;·&nbsp;&nbsp;
+                <sup>2</sup> National Institute of Informatics &nbsp;&nbsp;·&nbsp;&nbsp;
+                <sup>3</sup> Peking University
               </span>
               <br>
               <span class="author-block"><b>CVPR 2026 (under review)</b></span>
+              <br>
+              <span class="author-block">
+                <small><sup>*</sup> Corresponding author</small>
+              </span>
             </div>
-
-            <!-- 顶部按钮：Paper + Code（arXiv 先注释） -->
+  
+            <!-- 顶部按钮：Code + arXiv -->
             <div class="column has-text-centered" style="margin-top: 1.2rem;">
               <div class="publication-links">
-                <!-- Paper PDF -->
-                <span class="link-block">
-                  <a href="static/pdfs/mirai_cvpr2026.pdf" target="_blank"
-                     class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                    </span>
-                    <span>Paper (PDF)</span>
-                  </a>
-                </span>
-
-                <!-- Supplementary（如果暂时没有，可以注释掉） -->
-                <!--
-                <span class="link-block">
-                  <a href="static/pdfs/mirai_supplementary.pdf" target="_blank"
-                     class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                    </span>
-                    <span>Supplementary</span>
-                  </a>
-                </span>
-                -->
-
+  
                 <!-- Code -->
                 <span class="link-block">
                   <a href="https://github.com/y0urOy/Mirai-Code" target="_blank"
@@ -271,9 +250,8 @@
                     <span>Code</span>
                   </a>
                 </span>
-
-                <!-- arXiv（等有号了再打开） -->
-                <!--
+  
+                <!-- arXiv（有号之后替换链接） -->
                 <span class="link-block">
                   <a href="https://arxiv.org/abs/XXXX.XXXXX" target="_blank"
                      class="external-link button is-normal is-rounded is-dark">
@@ -283,21 +261,20 @@
                     <span>arXiv</span>
                   </a>
                 </span>
-                -->
+  
               </div>
             </div>
-
+  
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== Teaser：用一张大图 + 说明，替代原来的视频 ========== -->
+  <!-- ========== Teaser ========== -->
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body has-text-centered">
-        <!-- 这里放你做好的 teaser 图，例如 Figure 1 合图 -->
         <img src="static/images/teaser.png"
              alt="Mirai teaser figure"
              style="max-width: 100%; border-radius: 8px;">
@@ -338,34 +315,53 @@
     </div>
   </section>
 
-  <!-- ========== 一个简单的结果图 / 方法图 Section（保留一个 carousel 或直接用图片） ========== -->
+  <!-- ========== Method Overview ========== -->
   <section class="hero is-small">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <h2 class="title is-3 has-text-centered">Method Overview</h2>
         <div class="columns is-centered">
           <div class="column is-10 has-text-centered">
-            <!-- 可以把你的方法总览图放这里，例如 mirai_figures.png -->
             <img src="static/images/mirai_figures.png"
                  alt="Mirai framework overview"
                  style="max-width: 100%; border-radius: 8px;">
             <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
-              Mirai aligns AR internal representations with foresight encoded on 2D grids, exploring different injection levels, spatial layouts,
-              and foresight sources (unidirectional vs. bidirectional).
+              Overview of our explorations in the visual AR with foresight. For illustration, all subfigures
+              (except the right of (c)) use <em>K = 3</em> foresight tokens here.
+              (a) Foresight injection level. (b) Foresight in 1D scan vs. 2D grid. (c) The source of foresight.
             </h2>
+            <p class="has-text-justified" style="margin-top: 0.75rem;">
+              Mirai systematically probes how future information should be injected into AR training.
+              We compare injecting foresight at different representation layers, aligning it either along the
+              1D token sequence or the underlying 2D image grid, and sourcing it from unidirectional or
+              bidirectional teachers. These studies reveal that 2D grid–aligned foresight, especially from
+              bidirectional representations, yields the most stable gains in both convergence speed and global coherence.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 原模板的 image carousel / video / YouTube 等高级组件目前都不需要，直接注释掉即可 -->
-  <!--
-  ... 原来的 image carousel section ...
-  ... YouTube video section ...
-  ... video carousel section ...
-  ... poster iframe section ...
-  -->
+  <!-- ========== Results / Samples ========== -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">ImageNet Results</h2>
+        <div class="columns is-centered">
+          <div class="column is-10 has-text-centered">
+            <img src="static/images/sample.png"
+                 alt="Generated samples from Mirai"
+                 style="max-width: 100%; border-radius: 8px;">
+            <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
+              Generated samples on ImageNet 256×256 from LlamaGen-XL with Mirai-I. Mirai improves global
+              structure, object integrity, and perceptual quality compared to the AR baseline.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ========== BibTeX ========== -->
   <section class="section" id="BibTeX">
@@ -380,7 +376,7 @@
       <pre id="bibtex-code"><code>@inproceedings{mirai2026,
   title     = {Mirai: Autoregressive Visual Generation Needs Foresight},
   author    = {Yu, Yonghao and Huang, Lang and Wang, Zerun and Li, Runyi and Yamasaki, Toshihiko},
-  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  booktitle = {},
   year      = {2026},
   note      = {Under review},
   url       = {https://y0urOy.github.io/Mirai/}
