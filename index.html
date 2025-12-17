@@ -332,12 +332,8 @@
               </p>
              <p class="subtitle has-text-left" style="margin-top: 0.25rem;">
               Depending on the configuration of the foresight encoder, Mirai admits two instantiations: 
-             </p>
-             <p class="subtitle has-text-left" style="margin-top: 0.25rem;">
-              Mirai-E provides explicit, position–indexed foresight from the unidirectional AR model’s own Exponential Moving Average (EMA), aligning internal state to the foresights at a small set of nearby future locations.
-              </p>
-             <p class="subtitle has-text-left" style="margin-top: 0.25rem;">
-              Mirai-I supplies implicit, context–aggregating foresight by aligning internal states to features from a frozen bidirectional encoder at matched spatial locations. 
+              <strong>Mirai-E<strong> provides explicit, position–indexed foresight from the unidirectional AR model’s own Exponential Moving Average (EMA), aligning internal state to the foresights at a small set of nearby future locations.
+              <strong>Mirai-I<strong> supplies implicit, context–aggregating foresight by aligning internal states to features from a frozen bidirectional encoder at matched spatial locations. 
               </p>
              <p class="subtitle has-text-left" style="margin-top: 0.25rem;">
               At test time, the additional alignment components are removed; decoding remains token-by-token, strictly causal, and identical in computational cost to the standard AR model. 
