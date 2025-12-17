@@ -288,20 +288,20 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3" style="margin-bottom: 0.5rem; padding-bottom: 0;">
+          <h2 class="title is-3" style="margin-bottom: 1rem; padding-bottom: 0;">
   Abstract
 </h2>
-          <div class="content has-text-justified">
-            <p>
+<div class="content has-text-justified" style="line-height: 1.5;">
+  <p style="margin-bottom: 0.5rem;">
               Autoregressive (AR) visual generators model images as sequences of discrete tokens and are trained with next-token likelihood.
               This strict causality supervision optimizes each step only by its immediate next token, which diminishes global coherence and slows convergence.
             </p>
-            <p>
+            <p style="margin-bottom: 0.5rem;">
               We ask whether <strong>foresight</strong>—training signals that originate from later tokens—can help AR visual generation.
               Through controlled diagnostics across injection level, spatial layout, and foresight source, we find that aligning foresight to AR models'
               internal representation on the 2D image grids is crucial for effective causality modeling.
             </p>
-            <p>
+            <p style="margin-bottom: 0.5rem;">
               We instantiate this insight with <strong>Mirai</strong> (meaning “future” in Japanese), a general framework that injects future information
               into AR training without architecture changes or inference-time overhead. <strong>Mirai-E</strong> uses explicit foresight from multiple
               future positions, whereas <strong>Mirai-I</strong> leverages implicit foresight from matched bidirectional representations.
