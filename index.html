@@ -296,14 +296,14 @@
               Autoregressive (AR) visual generators model images as sequences of discrete tokens and are trained with next-token likelihood.
               This strict causality supervision optimizes each step only by its immediate next token, which diminishes global coherence and slows convergence.
             </p>
-            <p style="margin-bottom: 0.5rem;">
-              We ask whether <strong>foresight</strong>—training signals that originate from later tokens—can help AR visual generation.
-              Through controlled diagnostics across injection level, spatial layout, and foresight source, we find that aligning foresight to AR models' internal representation on the 2D image grids is crucial for effective causality modeling.
-            </p>
-            <p style="margin-bottom: 0.5rem;">
-              We instantiate this insight with <strong>Mirai</strong> (meaning “future” in Japanese), a general framework that injects future information
-              into AR training without architecture changes or inference-time overhead. <strong>Mirai-E</strong> ses explicit foresight from multiple future positions of unidirectional representations, whereas <strong>Mirai-I</strong> everages implicit foresight from matched bidirectional representations.
-              Extensive experiments on ImageNet show that Mirai both accelerates convergence and improves generation quality.
+            <p style="margin-bottom: 0.5rem;">
+              We ask whether <strong>foresight</strong>—training signals that originate from later tokens—can help AR visual generation.
+              Through controlled diagnostics across injection level, spatial layout, and foresight source, we find that aligning foresight to AR models' internal representation on the 2D image grids is crucial for effective causality modeling.
+            </p>
+            <p style="margin-bottom: 0.5rem;">
+              We instantiate this insight with <strong>Mirai</strong> (meaning “future” in Japanese), a general framework that injects future information
+              into AR training without architecture changes or inference-time overhead. <strong>Mirai-E</strong> ses explicit foresight from multiple future positions of unidirectional representations, whereas <strong>Mirai-I</strong> everages implicit foresight from matched bidirectional representations.
+              Extensive experiments on ImageNet show that Mirai both accelerates convergence and improves generation quality.
             </p>
           </div>
         </div>
@@ -327,15 +327,13 @@
             <p class="subtitle has-text-centered" style="margin-top: 0.75rem;">
               Mirai aligns the AR model's <strong>internal representations</strong> with the foresight from either <strong>bidirectional</strong> or <strong>unidirectional</strong> foresight encoder in a <strong>2D grid</strong>.
               </p>
-<p class="subtitle" style="margin-top: 0.25rem; font-size: 0.9rem; text-align: left;">
-  Depending on the configuration of the foresight encoder, Mirai admits two instantiations: 
-  <strong>Mirai-E</strong> provides explicit, position–indexed foresight from the unidirectional AR model’s own Exponential Moving Average (EMA), aligning internal state to the foresights at a small set of nearby future locations.
-  <strong>Mirai-I</strong> supplies implicit, context–aggregating foresight by aligning internal states to features from a frozen bidirectional encoder at matched spatial locations. 
-</p>
-
-<p class="subtitle" style="margin-top: 0.25rem; font-size: 0.9rem; text-align: left;">
-  At test time, the additional alignment components are removed; decoding remains token-by-token, strictly causal, and identical in computational cost to the standard AR model. 
-</p>
+              <p class="subtitle has-text-centered" style="margin-top: 0.25rem;">
+              Depending on the configuration of the foresight encoder, Mirai admits two instantiations: 
+              <strong>Mirai-E</strong> provides explicit, position–indexed foresight from the unidirectional AR model’s own Exponential Moving Average (EMA), aligning internal state to the foresights at a small set of nearby future locations.
+              <strong>Mirai-I</strong> supplies implicit, context–aggregating foresight by aligning internal states to features from a frozen bidirectional encoder at matched spatial locations. 
+              </p>
+             <p class="subtitle has-text-centered" style="margin-top: 0.25rem;">
+              At test time, the additional alignment components are removed; decoding remains token-by-token, strictly causal, and identical in computational cost to the standard AR model. 
             </h2>
 
           </div>
