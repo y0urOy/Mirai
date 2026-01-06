@@ -327,12 +327,12 @@
             <p class="subtitle has-text-centered" style="margin-top: 0.75rem;">
               Mirai aligns the AR model's <strong>internal representations</strong> with the foresight from either <strong>bidirectional</strong> or <strong>unidirectional</strong> foresight encoder in a <strong>2D grid</strong>.
               </p>
-              <p class="subtitle has-text-centered" style="margin-top: 0.25rem;">
+              <p class="subtitle has-text-centered" style="margin-top: 0.25rem; font-size: 1.05rem;">
               Depending on the configuration of the foresight encoder, Mirai admits two instantiations: 
               <strong>Mirai-E</strong> provides explicit, position–indexed foresight from the unidirectional AR model’s own Exponential Moving Average (EMA), aligning internal state to the foresights at a small set of nearby future locations.
               <strong>Mirai-I</strong> supplies implicit, context–aggregating foresight by aligning internal states to features from a frozen bidirectional encoder at matched spatial locations. 
               </p>
-             <p class="subtitle has-text-centered" style="margin-top: 0.25rem;">
+             <p class="subtitle has-text-centered" style="margin-top: 0.25rem; font-size: 1.05rem;">
               At test time, the additional alignment components are removed; decoding remains token-by-token, strictly causal, and identical in computational cost to the standard AR model. 
             </h2>
 
