@@ -4,7 +4,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2601.14671-b31b1b.svg)](https://arxiv.org/abs/2601.14671)
 [![Project Page](https://img.shields.io/badge/Project-Website-green)](https://y0uroy.github.io/Mirai/)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 </div>
 
@@ -26,9 +26,10 @@ This is the official PyTorch implementation of the paper **"Mirai: Autoregressiv
 ## 🛠️ Installation
 
 ```bash
+git clone https://github.com/y0urOy/Mirai.git
+cd Mirai
 conda create -n mirai python=3.9
 conda activate mirai
-cd mirai
 pip install -r requirements.txt
 ```
 ## ⬇️ Download
@@ -141,16 +142,27 @@ python3 evaluations/evaluator.py \
 ## 🎓 Citation
 If you find our work helpful, please cite:
 
-```bash
+```bibtex
 @article{yu2026mirai,
   title={Mirai: Autoregressive Visual Generation Needs Foresight},
   author={Yu, Yonghao and Huang, Lang and Wang, Zerun and Li, Runyi and Yamasaki, Toshihiko},
   journal={arXiv preprint arXiv:2601.14671},
-  year={2026}
+  year={2026},
+  url={https://arxiv.org/abs/2601.14671}
 }
 
 ```
 
-## 🎓 Citation
-🙏 Acknowledgements
+## Acknowledgements
 This codebase is built upon [LlamaGen](https://github.com/FoundationVision/LlamaGen). We thank the authors for their open-source contribution.
+
+## Project website
+
+The project page is published at [https://y0uroy.github.io/Mirai/](https://y0uroy.github.io/Mirai/).
+Its source is in [website/](website/); GitHub Actions publishes that directory at the same address.
+The code and website histories are preserved in this repository.
+
+## License
+
+See [LICENSE](LICENSE) and the license headers of vendored files. The website retains its
+[Creative Commons Attribution-ShareAlike 4.0 attribution](website/README.md#website-license).
