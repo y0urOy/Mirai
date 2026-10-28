@@ -2,6 +2,7 @@
 
 <div align="center">
 
+[![CVPR 2026](https://img.shields.io/badge/CVPR-2026-blue)](https://openaccess.thecvf.com/content/CVPR2026/html/Yu_Mirai_Autoregressive_Visual_Generation_Needs_Foresight_CVPR_2026_paper.html)
 [![arXiv](https://img.shields.io/badge/arXiv-2601.14671-b31b1b.svg)](https://arxiv.org/abs/2601.14671)
 [![Project Page](https://img.shields.io/badge/Project-Website-green)](https://y0uroy.github.io/Mirai/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -12,7 +13,7 @@
   <img src="assets/sample.png" width="800">
 </p>
 
-This is the official PyTorch implementation of the paper **"Mirai: Autoregressive Visual Generation Needs Foresight"**.
+This is the official PyTorch implementation of the paper **"Mirai: Autoregressive Visual Generation Needs Foresight"** (CVPR 2026).
 
 > Our study highlights that visual autoregressive models need foresight.
 
@@ -143,12 +144,13 @@ python3 evaluations/evaluator.py \
 If you find our work helpful, please cite:
 
 ```bibtex
-@article{yu2026mirai,
-  title={Mirai: Autoregressive Visual Generation Needs Foresight},
-  author={Yu, Yonghao and Huang, Lang and Wang, Zerun and Li, Runyi and Yamasaki, Toshihiko},
-  journal={arXiv preprint arXiv:2601.14671},
-  year={2026},
-  url={https://arxiv.org/abs/2601.14671}
+@InProceedings{Yu_2026_CVPR,
+    author    = {Yu, Yonghao and Huang, Lang and Wang, Zerun and Li, Runyi and Yamasaki, Toshihiko},
+    title     = {Mirai: Autoregressive Visual Generation Needs Foresight},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {30511-30520}
 }
 
 ```
